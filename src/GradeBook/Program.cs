@@ -18,7 +18,7 @@ namespace GradeBook
             Console.WriteLine($"The average grade is {stats.average:N2}");
             Console.WriteLine($"The highest grade is {stats.high:N2}");
             Console.WriteLine($"The lowest grade is {stats.low:N2}");
-            Console.WriteLine('This is a test sentence.');
+            Console.WriteLine("This is a test sentence.");
 
             /*the first one is an array however it has limitations, not able to ajust on the fly. So we used list instead
             var numbers = new double[] {12.7, 10.3, 6.11, 4.1};
