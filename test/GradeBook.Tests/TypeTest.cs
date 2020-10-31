@@ -6,13 +6,18 @@ namespace GradeBook.Tests
     public class TypeTests
     {
         [Fact]
-        public void TestName()
+        public void ValueTypesAlsoPassByValue()
         {
 
             var x = GetInt();
             SetInt(x);
             
-            Assert.Equal(3, x);
+            Assert.Equal(42, x);
+        }
+
+        private void SetInt(int z)
+        {
+            z = 42;
         }
 
         private int GetInt()
